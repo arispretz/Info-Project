@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Ari Info</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+	</div>
+
+	<script>
+document.addEventListener('DOMContentLoaded', function() {
+const ari_info = {
+  description: 'Ariana Spretz',
+  title: 'freeCodeCamp Courses',
+  keywords: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Node',
+    'Express',
+    'NoSQL',
+    'SQL',  
+    'data science',
+    'Python',
+    'Django',
+    'Docker',
+    'Statistics',
+    'Linear Algebra',
+    'Numpy',
+    'Pandas',
+    'Scipy',
+    'Scikit-learn',
+    'Matplotlib',
+    'Tensorflow'
+  ],
+  author: {
+    firstName: 'Ariana',
+    lastName: 'Spretz',
+    titles: [
+      ['💻', 'Programmer'],
+      ['🌐', 'Developer'],
+      ['🔥', 'Spanish Teacher'],
+      ['📔', 'Content Creator']
+    ],
+    qualifications: [
+      'Course. Spanish Teacher',
+      'Course. Full Stack Developer',
+      'Course. Front End Developer',
+      'Course. Back End Developer'
+    ],
+    socialLinks: [
+      {
+        social: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/ariana-carolina-spretz-369040120/',
+        fontawesomeIcon: '<i class="fab fa-linkedin"></i>'
+      },
+      {
+        social: 'Github',
+        url: 'https://github.com/arispretz/arispretz.github.io',
+        fontawesomeIcon: '<i class="fab fa-github-square"></i>'
+      },
+    ],
+    skills: [
+      'Web Development',
+      'Data Science',
+      'Programming'
+    ],
+    courses: [
+    {
+      name: 'Responsive Web Design',
+      topics: [
+        'Basic HTML and HTML5',
+        'Basic CSS',
+        'Applied Visual Design',
+        'Applied Accessibility',
+        'Responsive Web Design Principles',
+        'CSS Flexbox',
+        'CSS Grid'
+      ],
+    },
+    {
+      name: 'Legacy JavaScript Algorithms and Data Structures',
+      topics: [
+        'Basic JavaScript',
+        'ES6',
+        'Regular Expressions',
+        'Debugging',
+        'Basic Data Structures',
+        'Basic Algorithm Scripting',
+        'Object Oriented Programming',
+        'Functional Programming',
+        'Intermediate Algorithm Scripting'    
+      ],
+    },
+    {
+      name: 'Front End Development Libraries',
+      topics: [
+        'Bootstrap',
+        'jQuery',
+        'SASS',
+        'React',
+        'Redux',
+        'React and Redux'
+      ],
+    },
+    {
+      name: 'Data Visualization',
+      topics: [
+        'Data Visualization with D3',
+        'JSON APIs and AJAX'
+      ],
+    },
+    {
+      name: 'Relational Database',
+      topics: [
+        'Bash',
+        'Relational Databases',
+        'Bash Scripting',
+        'SQL',
+        'Postgress',
+        'Advanced Bash',
+        'Nano',
+        'Git'
+      ],
+    },
+    {
+      name: 'Back End Development and APIs',
+      topics: [
+        'Managing Packages with NPM',
+        'Basic Node and Express',
+        'MongoDB and Mongoose'
+      ],
+    },
+    {
+      name: 'Quality Assurance',
+      topics: [
+        'Quality Assurance and Testing with Chai',
+        'Advanced Node and Express'
+      ],
+    },
+    {
+      name: 'Scientific Computing with Python',
+      topics: [
+        'Python for Everybody'
+      ],
+    },
+    {
+      name: 'Data Analysis with Python',
+      topics: [
+        'Data Analysis with Python',
+        'Numpy'
+      ],
+    },
+    {
+      name: 'Information Security',
+      topics: [
+        'Information Security with HelmetJS',
+        'Python for Penetration Testing'
+      ],
+    },
+    {
+      name: 'Machine Learning with Python',
+      topics: [
+        'TensorFlow',
+        'Neural Networks'
+      ],
+    },
+    {
+      name: 'College Algebra with Python',
+      topics: [
+        'Ratios and Proportions',
+        'Solve for X',
+        'Fractions and Decimals',
+        'Functions and Graphing',
+        'Linear Functions',
+        'Common Factors and Square Roots',
+        'Graph Systems of Equations',
+        'Solve Systems of Equations',
+        'Applications of Linear Systems',
+        'Quadratic Equations',
+        'Parent Graphs and Polynomials',
+        'Business Applications of College Algebra',
+        'Simple and Compound Interest',
+        'Exponents and Logarithms',
+        'College Algebra with Python'
+      ],
+    },
+    {
+      name: 'Foundational C# with Microsoft',
+      topics: [
+        'Code Using C#',
+        'Create and Run Simple C# Console Applications',
+        'Add Logic to C# Console Applications',
+        'Work with Variable Data in C# Console Applications',
+        'Create Methods in C# Console Applications',
+        'Debug C# Console Applications'
+     ]
+    }
+  ]
+  }
+};
+      
+        const body = document.querySelector('body');
+        body.style.backgroundColor = 'lightyellow';
+  
+        const parentElement = document.querySelector('.wrapper');
+        parentElement.style.textAlign = 'center';
+        parentElement.style.marginTop = '20px';
+        parentElement.style.marginLeft = '30px';
+        parentElement.style.maxWidth = '1200px';
+
+        const title = document.createElement('h1');        
+        title.textContent = ari_info.title;
+        title.style.fontSize = '50px';
+        title.style.fontFamily = 'Arial Narrow';
+        parentElement.appendChild(title);
+        
+        const colors = ['green', 'yellow', 'blue', 'red', 'violet'];
+        let index = 0;
+
+        setInterval(() => {
+            
+          title.style.color = colors[index];
+            index = (index + 1) % colors.length;
+        }, 1000);
+        
+    
+    const h3 = document.createElement('h3'); 
+    h3.style.padding = '15px';
+    h3.style.height = '30px';
+    h3.style.width = '1150px'
+    h3.style.fontSize = '14px';
+    h3.style.marginLeft = '15px';
+    h3.style.marginTop = '15px';
+    parentElement.appendChild(h3);
+    
+    const colour = ["lightblue", "lightgreen", "lightcoral", "lightsalmon", "lightpink"];
+    let colourIndex = 0;
+
+    function updateTime() {
+        const currentDate = new Date();
+        const month = currentDate.toLocaleString('default', { month: 'long' });
+        const day = currentDate.getDate();
+        const year = currentDate.getFullYear();
+        const hours = currentDate.getHours();
+        const minutes = currentDate.getMinutes();
+        const seconds = currentDate.getSeconds();
+
+        const formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
+        const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+        const formattedDateTime = `${month} ${day}, ${year} ${hours}:${formattedMinutes}:${formattedSeconds}`;        
+        document.querySelector("h3").innerHTML = formattedDateTime;
+        document.querySelector('h3').style.backgroundColor = colour[colourIndex];
+        colourIndex = (colourIndex + 1) % colour.length;
+}
+
+setInterval(updateTime, 1000);
+
+const ul = document.createElement('ul');
+ul.style.display = 'flex';
+ul.style.flexDirection = 'column';
+ul.style.backgroundColor = 'lightpink';
+ul.style.marginLeft = '25px';
+parentElement.appendChild(ul);
+
+ari_info.author.courses.forEach((course) => {
+    const li = document.createElement('li');
+    li.style.display = 'flex';
+
+    ul.appendChild(li);
+
+    const columnTitle = document.createElement('div');
+    columnTitle.textContent = course.name;
+    columnTitle.style.flex = 1;
+    columnTitle.style.padding = '5px';
+    columnTitle.style.color = 'darkblue';
+    li.appendChild(columnTitle);
+   
+    const columnDetails = document.createElement('div');
+    columnDetails.style.flex = 1;
+    columnDetails.style.padding = '5px';
+    li.appendChild(columnDetails);
+  
+    const details = document.createElement('details');
+    columnDetails.appendChild(details);
+
+    const summary = document.createElement('summary');
+    summary.textContent = course.topics[0];
+    details.appendChild(summary);
+
+    const contentContainer = document.createElement('div'); 
+    details.appendChild(contentContainer);
+
+    const p = document.createElement('p');
+    p.textContent = course.topics.slice(1).join(', ');
+    contentContainer.appendChild(p);
+
+});
+
+const author = document.createElement('h4');
+author.textContent = ari_info.author.firstName + ' ' + ' ' + ari_info.author.lastName;
+author.style.marginTop = '50px';
+parentElement.appendChild(author);
+    
+const socialLinks = document.createElement('div');
+ari_info.author.socialLinks.forEach(social => {
+    const link = document.createElement('a');
+    link.href = social.url;
+    link.target = '_blank';
+    
+    const icon = document.createElement('i');
+    icon.innerHTML = ' ' + social.fontawesomeIcon + ' '; 
+    icon.style.fontSize = '24px';
+    icon.style.display = 'inline';
+    link.appendChild(icon);
+    socialLinks.appendChild(link);
+});
+
+parentElement.appendChild(socialLinks);
+
+const column = document.createElement('div');
+column.setAttribute('class', 'columns');
+column.style.display = 'grid';
+column.style.gridTemplateColumns = '1fr 1fr';
+column.style.gap = '10px';
+column.style.marginTop = '40px';
+parentElement.appendChild(column);
+
+function formatTextWithLineBreaks(text) {
+  return text.replace(/,/g, '');
+}
+
+const titles = ari_info.author.titles;
+const titlesColumn = document.createElement('div');
+titlesColumn.style.gridColumn = '1';
+titlesColumn.style.marginRight = '120px';
+  
+titles.forEach(title => {
+    const titleElement = document.createElement('h5');
+    titleElement.textContent = title;
+    titleElement.style.fontSize = '14px';
+    titlesColumn.appendChild(titleElement);
+});
+column.appendChild(titlesColumn);
+
+const skills = ari_info.author.skills;
+const skillsColumn = document.createElement('div');
+skillsColumn.style.gridColumn = '2'; 
+skillsColumn.style.marginRight = '260px';
+  
+skills.forEach(skill => {
+    const skillElement = document.createElement('h5');
+    
+    const tickIcon = document.createElement('i');
+    tickIcon.classList.add('fas', 'fa-check'); 
+    skillElement.appendChild(tickIcon);
+
+    const textNode = document.createTextNode(` ${skill}`); 
+    skillElement.appendChild(textNode);
+
+    skillElement.style.fontSize = '14px';
+    skillsColumn.appendChild(skillElement);
+});
+column.appendChild(skillsColumn);
+
+const qualifications = ari_info.author.qualifications;
+const qualificationsColumn = document.createElement('div');
+qualificationsColumn.style.gridColumn = '3'; 
+qualificationsColumn.style.marginRight = '50px';
+  
+qualifications.forEach(qualification => {
+    const qualificationElement = document.createElement('h5');    
+    const qualificationIcon = document.createElement('i');
+    qualificationIcon.classList.add('fas', 'fa-graduation-cap');
+    qualificationElement.appendChild(qualificationIcon);
+
+    const textNode = document.createTextNode(` ${qualification}`); 
+    qualificationElement.style.fontSize = '14px';
+    qualificationElement.appendChild(textNode);
+    qualificationsColumn.appendChild(qualificationElement);
+});
+column.appendChild(qualificationsColumn);
+
+const keyword= document.createElement('h4');
+keyword.textContent = 'Keywords';
+keyword.style.textAlign = 'left';
+keyword.style.paddingLeft = '20px';
+parentElement.appendChild(keyword);
+
+const keywordContainer = document.createElement('div');
+keywordContainer.setAttribute('class', 'keyword-container');
+keywordContainer.style.lineHeight = '2.5';
+keywordContainer.style.paddingLeft = '20px';
+parentElement.appendChild(keywordContainer);
+
+const keywords = ari_info.keywords;
+keywords.forEach((keyword, index) => {
+    const keywordElement = document.createElement('span');
+    keywordElement.textContent = keyword;
+    keywordElement.style.backgroundColor = getRandomColor(); 
+    keywordElement.style.padding = '5px 10px';
+    keywordElement.style.marginRight = '10px';
+    keywordElement.style.borderRadius = '5px';
+    keywordContainer.appendChild(keywordElement);
+});
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+    
+const footer = document.createElement('p');
+footer.textContent = 'Created by Ariana Spretz';
+footer.style.color = 'magenta';
+footer.style.textAlign = 'center';
+footer.style.fontWeight = 'bold';
+document.body.appendChild(footer);
+});    
+  </script>
+
+</body>
+
+</html>
